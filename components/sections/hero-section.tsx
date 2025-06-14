@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ChevronRight, Play } from "lucide-react"
@@ -11,7 +12,7 @@ export function HeroSection() {
   const [showVideo, setShowVideo] = useState(false)
 
   return (
-    <section className="pt-16 min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-blue-900/20 via-transparent to-green-900/20">
+    <section className="mt-16 min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-blue-900/20 via-transparent to-green-900/20">
       {/* 3D Background Scene */}
       <div className="absolute inset-0 opacity-30">
         <Hero3DScene />
@@ -88,17 +89,18 @@ export function HeroSection() {
 
           <div className="relative animate-in slide-in-from-right-8 duration-1000 delay-300">
             <div className="relative">
-              {/* 3D Interactive Element */}
-              {/* <div className="w-full h-[600px] bg-gradient-to-br from-blue-100/50 to-green-100/50 rounded-3xl backdrop-blur-sm border border-white/20 shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-green-600/10"></div>
-                <div className="relative z-10 h-full flex items-center justify-center">
-                  <div className="text-center text-gray-600">
-                    <div className="text-6xl mb-4">👁️</div>
-                    <p className="text-lg font-medium">Interactive 3D Eye Care Visualization</p>
-                    <p className="text-sm opacity-75">Hover and explore our services</p>
-                  </div>
-                </div>
-              </div> */}
+              {/* Hero Image */}
+              <div className="w-full h-[600px] relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+                <Image
+                  src="/hero.jpeg"
+                  alt="Healthcare professionals providing eye care services in the community"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                {/* Gradient overlay for better text readability if needed */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+              </div>
 
               {/* Floating elements */}
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full opacity-20 animate-bounce delay-500"></div>

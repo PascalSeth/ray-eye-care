@@ -9,7 +9,7 @@ const stories = [
     location: "Kumasi, Ashanti Region",
     participants: 150,
     impact: "30 students identified for immediate vision correction",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/zonals.jpeg",
     testimonial:
       "The screening helped us identify students who were struggling academically due to vision problems. Now they can see the board clearly and their grades have improved significantly.",
     author: "Mrs. Akosua Mensah, Headteacher",
@@ -20,7 +20,7 @@ const stories = [
     location: "Northern Region Villages",
     participants: 200,
     impact: "45 individuals connected to affordable treatment",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/community.jpeg",
     testimonial:
       "For the first time in years, I can see my grandchildren's faces clearly. The team not only tested my eyes but helped me get the glasses I needed at a price I could afford.",
     author: "Alhaji Mohammed, Community Elder",
@@ -31,7 +31,7 @@ const stories = [
     location: "Accra Metropolitan Area",
     participants: 100,
     impact: "12 cases of early-stage glaucoma detected",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/detection.jpeg",
     testimonial:
       "The early detection saved my sight. I had no symptoms, but the screening caught the glaucoma before it progressed. I'm grateful for this life-changing service.",
     author: "Grace Osei, Teacher",

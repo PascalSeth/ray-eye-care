@@ -6,7 +6,7 @@ export function StorySection() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 items-start mb-16">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
             <div className="space-y-4 text-gray-600">
@@ -44,24 +44,24 @@ export function StorySection() {
 
           <div className="relative">
             <Image
-              src="/placeholder.svg?height=500&width=600"
+              src="/members.jpeg"
               alt="R.A.Y. Healthcare founder and team"
-              width={600}
-              height={500}
-              className="rounded-xl shadow-lg"
+              width={500}
+              height={300}
+              className="rounded-xl shadow-lg w-full h-[80vh] max-lg:h-72 object-cover"
             />
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold text-blue-600 mb-1">2020</div>
-              <div className="text-sm text-gray-600">Founded</div>
+            <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg">
+              <div className="text-xl font-bold text-blue-600 mb-1">2020</div>
+              <div className="text-xs text-gray-600">Founded</div>
             </div>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           <Card className="text-center p-6 hover:shadow-lg transition-shadow">
             <CardContent className="p-0">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-8 h-8 text-blue-600" />
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="w-6 h-6 text-blue-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Compassionate Care</h3>
               <p className="text-gray-600 text-sm">
@@ -73,8 +73,8 @@ export function StorySection() {
 
           <Card className="text-center p-6 hover:shadow-lg transition-shadow">
             <CardContent className="p-0">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-green-600" />
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="w-6 h-6 text-green-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Community Focus</h3>
               <p className="text-gray-600 text-sm">
@@ -85,8 +85,8 @@ export function StorySection() {
 
           <Card className="text-center p-6 hover:shadow-lg transition-shadow">
             <CardContent className="p-0">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="w-8 h-8 text-purple-600" />
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="w-6 h-6 text-purple-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Excellence</h3>
               <p className="text-gray-600 text-sm">
