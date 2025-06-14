@@ -22,7 +22,6 @@ const navigationItems = [
   { href: "/sdg", label: "SDG", icon: Globe },
   { href: "/get-involved", label: "Get Involved", icon: Users },
   { href: "/events", label: "Events", icon: Calendar },
-  { href: "/contact", label: "Contact", icon: Phone },
 ]
 
 export function Navigation() {
@@ -87,16 +86,16 @@ export function Navigation() {
             ))}
           </div>
 
-          {/* Desktop Donate Button */}
+          {/* Desktop Contact Button */}
           <div className="hidden lg:flex">
             <Button
               asChild
               size="sm"
               className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white shadow-lg hover:shadow-xl transition-all duration-200"
             >
-              <Link href="/donate" className="flex items-center space-x-2">
-                <Heart className="w-4 h-4" />
-                <span>Donate Now</span>
+              <Link href="/contact" className="flex items-center space-x-2">
+                <Phone className="w-4 h-4" />
+                <span>Contact Us</span>
               </Link>
             </Button>
           </div>
@@ -158,16 +157,16 @@ export function Navigation() {
                     </div>
                   </nav>
                   
-                  {/* Mobile Donate Button */}
+                  {/* Mobile Contact Button */}
                   <div className="p-6 border-t bg-gray-50">
                     <Button
                       asChild
                       className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white shadow-lg"
                       onClick={handleLinkClick}
                     >
-                      <Link href="/donate" className="flex items-center justify-center space-x-2">
-                        <Heart className="w-4 h-4" />
-                        <span>Donate Now</span>
+                      <Link href="/contact" className="flex items-center justify-center space-x-2">
+                        <Phone className="w-4 h-4" />
+                        <span>Contact Us</span>
                       </Link>
                     </Button>
                   </div>
