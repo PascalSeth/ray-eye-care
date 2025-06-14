@@ -90,12 +90,13 @@ export function HeroSection() {
           <div className="relative animate-in slide-in-from-right-8 duration-1000 delay-300">
             <div className="relative">
               {/* Hero Image */}
-              <div className="w-full h-[600px] relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+              <div className="w-full max-xl:h-72 h-[600px] relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
                 <Image
                   src="/hero.jpeg"
                   alt="Healthcare professionals providing eye care services in the community"
-                  fill
-                  className="object-cover"
+                  className="object-cover w-full h-full"
+                  width={200}
+                  height={200}
                   priority
                 />
                 {/* Gradient overlay for better text readability if needed */}
@@ -123,7 +124,7 @@ export function HeroSection() {
             <div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center">
               <div className="text-center text-gray-500">
                 <Play className="w-16 h-16 mx-auto mb-4" />
-                <p>Video player would be integrated here</p>
+                <p>No Video Available right now</p>
               </div>
             </div>
           </div>
