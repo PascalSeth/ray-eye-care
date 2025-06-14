@@ -51,7 +51,7 @@ export function StorySection() {
               className="rounded-xl shadow-lg w-full h-[80vh] max-lg:h-72 object-cover"
             />
             <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-xl shadow-lg">
-              <div className="text-xl font-bold text-blue-600 mb-1">2020</div>
+              <div className="text-xl font-bold text-blue-600 mb-1">2025</div>
               <div className="text-xs text-gray-600">Founded</div>
             </div>
           </div>

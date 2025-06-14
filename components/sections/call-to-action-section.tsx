@@ -13,14 +13,14 @@ export function CallToActionSection() {
           <Button size="lg" variant="secondary" asChild>
             <Link href="/get-involved">Get Involved</Link>
           </Button>
-          <Button
+          {/* <Button
             size="lg"
             variant="outline"
             className="border-white text-white bg-black hover:text-blue-600"
             asChild
           >
             <Link href="/donate">Donate Now</Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

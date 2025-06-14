@@ -7,35 +7,35 @@ const founder = {
   name: "Dr. R.A.Y. Founder",
   role: "Founder & Lead Optometrist",
   image: "/founder.jpeg",
-  bio: "With over 10 years of experience in community healthcare, Dr. R.A.Y. founded the organization to address the critical gap in accessible eye care services across Ghana.",
-  specialties: ["Community Health", "Pediatric Optometry", "Public Health", "Healthcare Leadership"],
+  bio: "As a visionary student optometrist and emerging eye care leader at KNUST, I'm pioneering accessible eye care solutions across Ghana through strategic community impact initiatives. Having successfully orchestrated mass eye screenings for over 40,000 students and spearheaded multiple national and regional outreach programs, I established RAY Healthcare to systematically eliminate barriers to quality eye care nationwide. My expertise spans from conducting cutting-edge low vision research to delivering specialized care for children with special needs, while my leadership in Christian youth programs demonstrates my commitment to integrating faith-driven service with professional excellence. I don't just advocate for change—I architect it, transforming how Ghana approaches community eye health through innovative partnerships and scalable healthcare solutions.",
+  specialties: ["Community Health Leadership", "Strategic Healthcare Development", "Pediatric Optometry", "Public Health Innovation", "Research & Development"],
   isFounder: true
 }
 
 const volunteerTeam = [
   {
     name: "Sarah Mensah",
-    role: "Volunteer Program Coordinator",
-    image: "/girl.jpeg",
-    bio: "Sarah volunteers her time to coordinate outreach programs and build bridges between our organization and local communities.",
-    specialties: ["Program Management", "Community Outreach", "Health Education"],
-    contribution: "Leadership & Coordination"
+    image: "/girl.jpeg"
   },
   {
-    name: "Dr. Kwame Asante",
-    role: "Volunteer Optometrist",
-    image: "/boy.jpeg",
-    bio: "Dr. Asante generously contributes his expertise in advanced eye care and helps mentor other volunteers in screening techniques.",
-    specialties: ["Clinical Optometry", "Volunteer Training", "Quality Assurance"],
-    contribution: "Clinical Expertise"
+    name: "Dr. Kwame Asante", 
+    image: "/boy.jpeg"
   },
   {
     name: "Grace Osei",
-    role: "Community Volunteer",
-    image: "/girl2.jpeg",
-    bio: "Grace dedicates her time to building relationships with local communities and ensuring our programs meet each area's unique needs.",
-    specialties: ["Community Relations", "Cultural Competency", "Local Partnerships"],
-    contribution: "Community Engagement"
+    image: "/girl2.jpeg"
+  },
+    {
+    name: "Dr. Kwame Asante", 
+    image: "/boy2.jpeg"
+  },
+    {
+    name: "Dr. Kwame Asante", 
+    image: "/girl3.jpeg"
+  },
+     {
+    name: "Dr. Kwame Asante", 
+    image: "/boy3.jpeg"
   },
 ]
 
@@ -60,7 +60,7 @@ export function TeamSection() {
             <h3 className="text-2xl font-bold text-gray-900">Our Founder</h3>
           </div>
           
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <Card className="group hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-blue-100">
               <div className="md:flex">
                 <div className="md:w-1/3 relative overflow-hidden">
@@ -145,19 +145,7 @@ export function TeamSection() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h4 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h4>
-                  <p className="text-green-600 font-medium mb-2">{member.role}</p>
-                  <div className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-medium mb-3 inline-block">
-                    {member.contribution}
-                  </div>
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">{member.bio}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {member.specialties.map((specialty, idx) => (
-                      <Badge key={idx} variant="outline" className="text-xs border-green-200 text-green-700">
-                        {specialty}
-                      </Badge>
-                    ))}
-                  </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-4 text-center">{member.name}</h4>
                 </CardContent>
               </Card>
             ))}
