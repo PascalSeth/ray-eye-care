@@ -41,10 +41,10 @@ const sdgGoals: SDGGoal[] = [
     hoverGradient: "from-red-500 to-red-600",
     textColor: "text-red-600",
     borderColor: "border-red-200",
-    impact: "500+ people received free screenings",
+    impact: "1000+ people received free screenings",
     icon: DollarSign,
     category: "Economic",
-    stats: { beneficiaries: "500+", locations: "25", success: "92%" }
+    stats: { beneficiaries: "1000+", locations: "25", success: "92%" }
   },
   {
     number: 3,

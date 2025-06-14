@@ -1,6 +1,6 @@
 export function StatsSection() {
   const stats = [
-    { value: "500+", label: "People Screened" },
+    { value: "1000+", label: "People Screened" },
     { value: "50+", label: "Schools Visited" },
     { value: "6", label: "SDG Goals" },
   ]

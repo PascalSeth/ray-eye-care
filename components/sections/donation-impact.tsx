@@ -4,7 +4,7 @@ import { TrendingUp, Users, Eye, Award } from "lucide-react"
 const impactStats = [
   {
     icon: Eye,
-    value: "500+",
+    value: "1000+",
     label: "People Screened",
     description: "Thanks to donor support in 2024",
     color: "blue",

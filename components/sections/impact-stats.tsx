@@ -5,8 +5,8 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const stats = [
   {
-    value: 500,
-    label: "People Screened in 2024",
+    value: 1000,
+    label: "People Screened in 2025",
     suffix: "+",
     color: "blue",
     description: "Comprehensive eye examinations conducted",
