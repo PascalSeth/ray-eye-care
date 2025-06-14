@@ -11,7 +11,7 @@ export default function EventsPage() {
         badge="Our Work in Action"
       />
       <EventsGallery />
-      <UpcomingEvents />
+      {/* <UpcomingEvents /> */}
     </div>
   )
 }

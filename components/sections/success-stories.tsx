@@ -17,7 +17,7 @@ const stories = [
   },
   {
     title: "Rural Community Outreach",
-    location: "Northern Region Villages",
+    location: "Koforidua, Eastern Region",
     participants: 200,
     impact: "45 individuals connected to affordable treatment",
     image: "/community.jpeg",
