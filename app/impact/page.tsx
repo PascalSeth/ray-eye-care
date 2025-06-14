@@ -11,9 +11,9 @@ export default function ImpactPage() {
         description="See how R.A.Y. Healthcare is transforming lives and communities through accessible eye care."
         badge="Making a Difference"
       />
-      <ImpactStats />
+      
       <SuccessStories />
-      <PartnershipsSection />
+      <ImpactStats /><PartnershipsSection />
     </div>
   )
 }

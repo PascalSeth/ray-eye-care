@@ -12,7 +12,7 @@ interface EventImage {
 }
 
 // Generate zonal images array programmatically
-const eventImages: EventImage[] = Array.from({ length: 23 }, (_, i) => ({
+const eventImages: EventImage[] = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
   src: `/zonals/zonals (${i + 1}).jpg`,
   alt: "SHS Zonal Screening",
