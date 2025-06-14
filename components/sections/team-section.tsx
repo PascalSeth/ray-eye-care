@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Linkedin, Mail, Heart, Users } from "lucide-react"
 
 const founder = {
-  name: "Dr. R.A.Y. Founder",
+  name: "Dr. Danso Yaw Poakwa",
   role: "Founder & Lead Optometrist",
   image: "/founder.jpeg",
   bio: "As a visionary student optometrist and emerging eye care leader at KNUST, I'm pioneering accessible eye care solutions across Ghana through strategic community impact initiatives. Having successfully orchestrated mass eye screenings for over 40,000 students and spearheaded multiple national and regional outreach programs, I established RAY Healthcare to systematically eliminate barriers to quality eye care nationwide. My expertise spans from conducting cutting-edge low vision research to delivering specialized care for children with special needs, while my leadership in Christian youth programs demonstrates my commitment to integrating faith-driven service with professional excellence. I don't just advocate for change—I architect it, transforming how Ghana approaches community eye health through innovative partnerships and scalable healthcare solutions.",
@@ -14,28 +14,32 @@ const founder = {
 
 const volunteerTeam = [
   {
-    name: "Sarah Mensah",
+    name: "Janet Adjei",
     image: "/girl.jpeg"
   },
   {
-    name: "Dr. Kwame Asante", 
+    name: "Boateng Osei Tutu", 
     image: "/boy.jpeg"
   },
   {
-    name: "Grace Osei",
+    name: "Adwoa Obenewaa",
     image: "/girl2.jpeg"
   },
     {
-    name: "Dr. Kwame Asante", 
+    name: "Baffour Micheal Kyei", 
     image: "/boy2.jpeg"
   },
     {
-    name: "Dr. Kwame Asante", 
+    name: "Charlotte Agyei", 
     image: "/girl3.jpeg"
   },
      {
-    name: "Dr. Kwame Asante", 
+    name: "Andey Prosper", 
     image: "/boy3.jpeg"
+  },
+       {
+    name: "Agnes Adjei", 
+    image: "/girl4.jpeg"
   },
 ]
 
