@@ -19,16 +19,16 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-          <div className="relative">
-                        <Image 
-                          src='/logo-bg.png' 
-                          alt="Logo" 
-                          width={160} 
-                          height={120}
-                          className="h-10 w-auto sm:h-12"
-                          priority
-                        />
-                      </div>
+              <div className="relative">
+                <Image 
+                  src='/logo-bg.png' 
+                  alt="Logo" 
+                  width={160} 
+                  height={120}
+                  className="h-10 w-auto sm:h-12"
+                  priority
+                />
+              </div>
               <div>
                 <h3 className="text-xl font-bold">R.A.Y. Healthcare</h3>
                 <p className="text-sm text-gray-400">Bringing Vision to Communities</p>
@@ -68,20 +68,52 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2">
-              <div className="text-gray-400 text-sm">+233 XX XXX XXXX</div>
-              <div className="text-gray-400 text-sm">info@rayhealthcare.org</div>
-              <div className="text-gray-400 text-sm">Accra, Ghana</div>
+              <Link
+                href="tel:+2330548064492"
+                className="block text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                +233 0548064492
+              </Link>
+              <Link
+                href="mailto:rayhealthcareafrica@gmail.com"
+                className="block text-gray-400 hover:text-white text-sm transition-colors"
+              >
+                rayhealthcareafrica@gmail.com
+              </Link>
+              <Link
+                href="https://maps.google.com/?q=Accra,Ghana"
+                className="block text-gray-400 hover:text-white text-sm transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Accra, Ghana
+              </Link>
             </div>
             <div className="flex space-x-3 mt-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              {/* <Link
+                href="https://www.facebook.com/rayhealthcare" // Replace with your actual Facebook URL
+                className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Facebook className="w-5 h-5" />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link> */}
+              <Link
+                href="https://www.instagram.com/r.a.y._healthcare_africa/"
+                className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Instagram className="w-5 h-5" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              {/* <Link
+                href="https://www.linkedin.com/company/rayhealthcare" // Replace with your actual LinkedIn URL
+                className="text-gray-400 hover:text-white transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="w-5 h-5" />
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
