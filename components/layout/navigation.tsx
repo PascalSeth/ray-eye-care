@@ -115,7 +115,7 @@ export function Navigation() {
               </SheetTrigger>
               <SheetContent 
                 side="right" 
-                className="w-[300px] sm:w-[350px] p-0"
+                className="w-[300px] sm:w-[350px] z-[99999] p-0"
               >
                 <SheetHeader className="px-6 py-4 border-b bg-gradient-to-r from-blue-50 to-green-50">
                   <SheetTitle className="text-left flex items-center space-x-3">
