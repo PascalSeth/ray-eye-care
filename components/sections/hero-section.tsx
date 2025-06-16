@@ -12,35 +12,50 @@ export function HeroSection() {
   const [showVideo, setShowVideo] = useState(false)
 
   return (
-    <section className="mt-16 min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-blue-900/20 via-transparent to-green-900/20">
-      {/* 3D Background Scene */}
-      <div className="absolute inset-0 opacity-30">
+    <section className="min-h-screen pt-20 flex items-center relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/hero.jpeg"
+          alt="Healthcare professionals providing eye care services in the community"
+          className="object-cover w-full h-full"
+          fill
+          priority
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 via-transparent to-green-900/30"></div>
+      </div>
+
+      {/* 3D Background Scene - lighter opacity since we have image bg */}
+      <div className="absolute inset-0 opacity-20">
         <Hero3DScene />
       </div>
 
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-400/5 rounded-full blur-3xl animate-spin-slow"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-green-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-400/10 rounded-full blur-3xl animate-spin-slow"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-in slide-in-from-left-8 duration-1000">
             <div className="space-y-6">
-              <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200 animate-bounce">
+              <Badge className="bg-blue-100/90 text-blue-800 hover:bg-blue-200/90 animate-bounce backdrop-blur-sm">
                 Healthcare • Vision • Community
               </Badge>
 
-              <h1 className="text-4xl md:text-7xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight drop-shadow-2xl">
                 Bringing Vision to{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 animate-gradient-x">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 animate-gradient-x drop-shadow-none">
                   Communities
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+              <p className="text-xl md:text-2xl text-gray-100 leading-relaxed drop-shadow-lg">
                 Everyone deserves access to quality healthcare. We bring essential eye care services directly to
                 communities and schools, preventing vision loss through early intervention and education.
               </p>
@@ -58,30 +73,30 @@ export function HeroSection() {
                 </Link>
               </Button>
 
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg transform hover:scale-105 transition-all duration-300 backdrop-blur-sm"
+                className="border-2 border-white/80 text-white hover:bg-white/10 px-8 py-4 text-lg transform hover:scale-105 transition-all duration-300 backdrop-blur-sm"
                 onClick={() => setShowVideo(true)}
               >
                 <Play className="mr-2 w-5 h-5" />
                 Watch Our Story
-              </Button>
+              </Button> */}
             </div>
 
             {/* Interactive stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               {[
-                { value: "500+", label: "Lives Changed", color: "text-blue-600" },
-                { value: "50+", label: "Schools Reached", color: "text-green-600" },
-                { value: "6", label: "SDG Goals", color: "text-purple-600" },
+                { value: "500+", label: "Lives Changed", color: "text-blue-400" },
+                { value: "50+", label: "Schools Reached", color: "text-green-400" },
+                { value: "6", label: "SDG Goals", color: "text-purple-400" },
               ].map((stat, index) => (
                 <div
                   key={index}
-                  className="text-center p-4 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                  className="text-center p-4 bg-white/10 backdrop-blur-md rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-white/20"
                 >
-                  <div className={`text-3xl font-bold ${stat.color} mb-1`}>{stat.value}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
+                  <div className={`text-3xl font-bold ${stat.color} mb-1 drop-shadow-lg`}>{stat.value}</div>
+                  <div className="text-sm text-gray-200">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -89,23 +104,12 @@ export function HeroSection() {
 
           <div className="relative animate-in slide-in-from-right-8 duration-1000 delay-300">
             <div className="relative">
-              {/* Hero Image */}
-              <div className="w-full max-xl:h-72 h-[600px] relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-                <Image
-                  src="/hero.jpeg"
-                  alt="Healthcare professionals providing eye care services in the community"
-                  className="object-cover w-full h-full"
-                  width={200}
-                  height={200}
-                  priority
-                />
-                {/* Gradient overlay for better text readability if needed */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
-              </div>
+              {/* Content card over background */}
+           
 
               {/* Floating elements */}
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full opacity-20 animate-bounce delay-500"></div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-green-500 to-blue-500 rounded-full opacity-20 animate-bounce delay-1000"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full opacity-30 animate-bounce delay-500"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-green-500 to-blue-500 rounded-full opacity-30 animate-bounce delay-1000"></div>
             </div>
           </div>
         </div>

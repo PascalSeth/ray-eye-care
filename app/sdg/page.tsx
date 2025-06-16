@@ -4,7 +4,7 @@ import { SDGImpact } from "@/components/sections/sdg-impact"
 
 export default function SDGPage() {
   return (
-    <div className="pt-16">
+    <div className="pt-20">
       <PageHeader
         title="UN SDG Alignment"
         description="Discover how R.A.Y. Healthcare's work contributes to achieving the United Nations Sustainable Development Goals."

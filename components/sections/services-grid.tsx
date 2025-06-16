@@ -8,7 +8,7 @@ const services = [
     title: "Community Eye Screenings",
     description: "Free comprehensive eye examinations in local communities",
     details:
-      "We conduct thorough eye screenings to detect conditions like cataracts, glaucoma, and refractive errors early.",
+      "We conduct thorough eye screenings for early detection of conditions such as glaucoma, cataract, refractive errors etc",
     color: "blue",
   },
   {
@@ -16,7 +16,7 @@ const services = [
     title: "School Outreach Programs",
     description: "Vision screenings and education in schools",
     details:
-      "We visit schools to screen students and educate them about eye health, ensuring they can see clearly to learn effectively.",
+      "We visit schools to screen students and teach them about eye health, helping them to see clearly,comfortably and confidently, so they can focus better and learn without strain.",
     color: "green",
   },
   {

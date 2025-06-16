@@ -11,7 +11,7 @@ const processSteps = [
   {
     icon: Stethoscope,
     title: "Mobile Screening",
-    description: "Our trained team conducts comprehensive eye examinations using portable equipment.",
+    description: "Our trained team conducts comprehensive eye examination at your doorstep. We bring vision to your doorsteps",
     step: "02",
   },
   {

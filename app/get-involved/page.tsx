@@ -5,7 +5,7 @@ import { RequestVisitSection } from "@/components/sections/request-visit-section
 
 export default function GetInvolvedPage() {
   return (
-    <div className="pt-16">
+    <div className="pt-20">
       <PageHeader
         title="Get Involved"
         description="Join our mission to bring quality eye care to communities that need it most."

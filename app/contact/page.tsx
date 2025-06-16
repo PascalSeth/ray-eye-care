@@ -5,7 +5,7 @@ import { LocationMap } from "@/components/sections/location-map"
 
 export default function ContactPage() {
   return (
-    <div className="pt-16">
+    <div className="pt-20">
       <PageHeader
         title="Contact Us"
         description="Ready to partner with us, schedule a screening, or learn more about our work? We'd love to hear from you."

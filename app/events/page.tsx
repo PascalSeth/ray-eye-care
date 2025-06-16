@@ -4,7 +4,7 @@ import { UpcomingEvents } from "@/components/sections/upcoming-events"
 
 export default function EventsPage() {
   return (
-    <div className="pt-16">
+    <div className="pt-20">
       <PageHeader
         title="Events & Gallery"
         description="See highlights from our recent outreach programs and community events."

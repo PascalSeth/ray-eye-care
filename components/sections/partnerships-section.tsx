@@ -3,13 +3,13 @@ import { Badge } from "@/components/ui/badge"
 import { Handshake, Building, GraduationCap, Heart } from "lucide-react"
 
 const partners = [
-  {
-    name: "Ghana Health Service",
-    type: "Government Partner",
-    logo: "/placeholder.svg?height=100&width=200",
-    description: "Collaborating on national eye health initiatives and policy development.",
-    icon: Building,
-  },
+  // {
+  //   name: "Ghana Health Service",
+  //   type: "Government Partner",
+  //   logo: "/placeholder.svg?height=100&width=200",
+  //   description: "Collaborating on national eye health initiatives and policy development.",
+  //   icon: Building,
+  // },
   {
     name: "Local Schools Network",
     type: "Educational Partner",
@@ -69,7 +69,7 @@ export function PartnershipsSection() {
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
               <div className="text-gray-600">Active Partners</div>
             </div>
             <div className="text-center">

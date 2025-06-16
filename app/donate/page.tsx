@@ -5,7 +5,7 @@ import { DonationTiers } from "@/components/sections/donation-tiers"
 
 export default function DonatePage() {
   return (
-    <div className="pt-16">
+    <div className="pt-20">
       <PageHeader
         title="Support Our Mission"
         description="Your donation helps us provide free eye care to those who need it most. Every contribution makes a difference."
