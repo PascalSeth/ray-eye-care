@@ -255,9 +255,9 @@ export function TeamSection() {
                 <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-200 hover:scale-105 shadow-lg">
                   Volunteer With Us
                 </button>
-                <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200 hover:scale-105">
+                {/* <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200 hover:scale-105">
                   Learn More
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

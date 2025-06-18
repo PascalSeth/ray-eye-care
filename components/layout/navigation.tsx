@@ -107,10 +107,9 @@ export function Navigation() {
                 <Button 
                   variant="ghost" 
                   size="sm"
-                  className="p-2 hover:bg-gray-100 transition-colors"
+                  className="p-2 text-gray-600 hover:bg-gray-100 transition-colors"
                 >
                   <Menu className="w-6 h-6" />
-                  <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
               <SheetContent 

@@ -263,7 +263,7 @@ const SDGCard: React.FC<SDGCardProps> = ({ goal, index }) => {
       </div>
       
       {/* Action Button */}
-      <div className="relative px-6 pb-6">
+      {/* <div className="relative px-6 pb-6">
         <button className={`w-full py-3 px-4 rounded-xl border-2 ${goal.borderColor}
           ${goal.textColor} font-medium text-sm transition-all duration-300
           hover:bg-gradient-to-r ${goal.hoverGradient} hover:text-white hover:border-transparent
@@ -272,7 +272,7 @@ const SDGCard: React.FC<SDGCardProps> = ({ goal, index }) => {
           <span>Learn More</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
         </button>
-      </div>
+      </div> */}
       
       {/* Hover Overlay */}
       <div className={`absolute inset-0 bg-gradient-to-br ${goal.hoverGradient} 

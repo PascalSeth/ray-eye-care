@@ -65,9 +65,9 @@ export function ServicesGrid() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">{service.details}</p>
-                <Button variant="outline" size="sm" className="w-full">
+                {/* <Button variant="outline" size="sm" className="w-full">
                   Learn More
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           ))}
