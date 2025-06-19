@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Linkedin, Mail, Heart, Users, Star, Award } from "lucide-react"
+import Link from "next/link"
 
 const founder = {
   name: "Dr. Danso Yaw Poakwa",
@@ -252,9 +253,9 @@ export function TeamSection() {
                 We're always looking for passionate volunteers to help us expand our reach and impact more communities across Ghana. Every skill matters, every hour counts.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-200 hover:scale-105 shadow-lg">
+                <Link href='/get-involved' className="bg-white hover:cursor-pointer text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-all duration-200 hover:scale-105 shadow-lg">
                   Volunteer With Us
-                </button>
+                </Link>
                 {/* <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200 hover:scale-105">
                   Learn More
                 </button> */}

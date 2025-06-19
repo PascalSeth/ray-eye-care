@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Quote, CheckCircle, Star, Users, Heart, Eye } from "lucide-react"
+import Link from "next/link"
 
 const stories = [
   {
@@ -213,9 +214,9 @@ export function SuccessStories() {
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
               Join R.A.Y. Healthcare in bringing accessible eye care to more communities across Ghana.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+            <Link href='get-involved' className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors">
               Partner With Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
