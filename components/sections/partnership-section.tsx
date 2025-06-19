@@ -1,12 +1,12 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Building, Handshake, TrendingUp, Globe, CheckCircle } from "lucide-react"
+import { Toaster, toast } from "sonner"
 
 const partnershipTypes = [
   {
@@ -42,14 +42,33 @@ const partnershipTypes = [
 export function PartnershipSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    const form = e.currentTarget
+    const formData = new FormData(form)
 
-    setIsSubmitting(false)
-    alert("Thank you for your interest in partnering with us! We'll be in touch within 48 hours.")
+    try {
+      const response = await fetch('https://formspree.io/f/xzzgvnvr', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        toast.success("Thank you for your interest in partnering with us! We'll be in touch within 48 hours.")
+        form.reset()
+      } else {
+        toast.error("There was an error submitting your inquiry. Please try again or contact us directly.")
+      }
+    } catch (error) {
+      toast.error("There was an error submitting your inquiry. Please try again or contact us directly.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -165,28 +184,29 @@ export function PartnershipSection() {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Contact Name</label>
-                    <Input placeholder="Your full name" required />
+                    <Input name="contactName" placeholder="Your full name" required />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Organization</label>
-                    <Input placeholder="Organization name" required />
+                    <Input name="organization" placeholder="Organization name" required />
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Email</label>
-                    <Input type="email" placeholder="your.email@example.com" required />
+                    <Input name="email" type="email" placeholder="your.email@example.com" required />
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700">Phone</label>
-                    <Input placeholder="+233 XX XXX XXXX" required />
+                    <Input name="phone" placeholder="+233 XX XXX XXXX" required />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-700">Partnership Type</label>
                   <select
+                    name="partnershipType"
                     className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     required
                   >
@@ -202,6 +222,7 @@ export function PartnershipSection() {
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-700">Partnership Goals</label>
                   <textarea
+                    name="partnershipGoals"
                     className="w-full min-h-[120px] px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                     placeholder="Tell us about your organization and what you hope to achieve through this partnership..."
                     required
@@ -220,6 +241,7 @@ export function PartnershipSection() {
           </Card>
         </div>
       </div>
+      <Toaster richColors />
     </section>
   )
 }

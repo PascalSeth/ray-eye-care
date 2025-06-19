@@ -394,7 +394,7 @@ export  function SDGGrid() {
           </div>
           
           {/* Call to Action */}
-          <div className="text-center">
+          {/* <div className="text-center">
             <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-8 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl">
               <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
                 <span>View Our Full Impact Report</span>
@@ -405,7 +405,7 @@ export  function SDGGrid() {
                 Get Involved Today
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
